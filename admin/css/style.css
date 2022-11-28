@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(164 164 234);
+    padding: 20px 120px;
+}
+header img{
+    width: 70px;
+}
+header .logout{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+header .logout:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.main{
+    padding: 50px 120px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 30px;
+}
+.fileManager{
+    margin: 0 auto;
+    background-color: rgb(81 81 215 / 52%);
+    padding: 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.folderList, .fileList{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 3px 7px;
+    background-color: #fff;
+    border-bottom: 1px solid;
+    width: 400px;
+}
+.folderList a, .fileList a{
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.folderList:hover, .fileList:hover{
+    background-color: #d7d8f2;
+    border-color: blue;
+}
+.folderListIcon, .fileListIcon{
+    width: 24px;
+    margin-right: 5px;
+    padding: 5px 0px;
+}
+.actions form{
+    /* width: 300px; */
+    margin-bottom: 30px;
+}
+.actions h4{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.actions input{
+    width: 400px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid;
+    margin-right: 7px;
+}
+.actions button{
+    cursor: pointer;
+    padding: 10px 30px;
+    width: 200px;
+    font-size: 14px;
+    background: #5962ff;
+    color: #fff;
+    border: 1px solid #5962ff;
+}
+.actions input::-webkit-file-upload-button {
+    background: #5962ff;
+    border: none;
+    padding: 7px 10px;
+    color: #fff;
+    font-size: 14px; 
+    cursor: pointer;  
+    margin-right: 10px; 
+}
+.actions button:hover{    
+    background: #222dfb;
+}
+.actions input::-webkit-file-upload-button:hover {
+    background: #222dfb;  
+}
+.uploadFile input{
+    border: none;
+    padding-left: 0px;
+    padding-right: 20px;
+    font-weight: 600;
+}
+.renameFolder input{
+width: 186px;
+}
+.editFile{
+    text-align: center;
+}
+.editFile h4{
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    text-align: left;
+}
+.editFile textarea{
+    width: 1278px;
+    height: 500px;
+    font-size: 14px;
+    margin-bottom: 7px;
+    padding: 10px;
+}
+.editFile button{
+    cursor: pointer;
+    padding: 10px 30px;
+    width: 1300px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    background: #5962ff;
+    color: #fff;
+    border: 1px solid #5962ff;
+}
+.editFile button:hover{    
+    background: #222dfb;
+}
+
+/* login */
+.loginPage{
+    background: rgb(164 164 234);
+    border-top: 1px solid #999;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.loginForm {
+    position: relative;
+    margin: 0px auto;
+    width: 400px;
+    /* padding-right: 32px; */
+    font-weight: 500;
+    color: #000000;
+  }
+  .loginForm p {
+    margin: 0 0 10px;
+  }
+  .loginForm input, .loginForm button, .loginForm label {
+    font-size: 15px;
+    font-weight: 300;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .loginForm input[type=text], .loginForm input[type=password] {
+    font-size: 16px;
+    padding: 0 10px;
+    width: 300px;
+    height: 40px;
+    color: #000;
+    background: rgba(0, 0, 0, 0.16);
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+  }
+  .loginForm input[type=text]:focus, .loginForm input[type=password]:focus {
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    outline: 0;
+  }
+  
+  .loginForm label {
+    float: left;
+    width: 100px;
+    line-height: 40px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+  .login-submit{
+    text-align: center;
+  }
+  .login-button{
+    cursor: pointer;
+    padding: 10px 30px;
+    width: 390px;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    background: #5962ff;
+    color: #fff;
+    border: 1px solid #5962ff;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.login-button:hover{    
+    background: #222dfb;
+}
